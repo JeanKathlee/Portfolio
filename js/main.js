@@ -268,12 +268,11 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const thumbs = [...showcase.querySelectorAll(".screen-thumb")];
     let timer;
     let visible = false;
-    let paused = false;
 
     function restartProgress() {
       showcase.classList.remove("is-playing");
       void showcase.offsetWidth;
-      if (visible && !paused) showcase.classList.add("is-playing");
+      if (visible) showcase.classList.add("is-playing");
     }
 
     function showNextScreen() {
@@ -299,7 +298,7 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     }
 
     function startAutoplay() {
-      if (timer || paused || !visible) return;
+      if (timer || !visible) return;
       restartProgress();
       timer = window.setInterval(showNextScreen, 4500);
     }
@@ -309,12 +308,6 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       timer = undefined;
       showcase.classList.remove("is-playing");
     }
-
-    const interactionArea = showcase.querySelector(".project-demo");
-    interactionArea.addEventListener("pointerenter", () => { paused = true; stopAutoplay(); });
-    interactionArea.addEventListener("pointerleave", () => { paused = false; startAutoplay(); });
-    interactionArea.addEventListener("focusin", () => { paused = true; stopAutoplay(); });
-    interactionArea.addEventListener("focusout", () => { paused = false; startAutoplay(); });
 
     new IntersectionObserver(([entry]) => {
       visible = entry.isIntersecting;
