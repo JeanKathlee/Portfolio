@@ -40,11 +40,13 @@ function sendEmail(event) {
     .then(() => {
       contactForm.reset();
       formStatus.className = "form-status success";
-      formStatus.textContent = "Thank you! Your message has been sent.";
+      formStatus.textContent = "✓ Message sent! Thank you—I’ll get back to you soon.";
+      formStatus.focus();
     })
     .catch(() => {
       formStatus.className = "form-status error";
-      formStatus.textContent = "Sorry, your message could not be sent. Please try again.";
+      formStatus.textContent = "Message not sent. Please check your connection and try again.";
+      formStatus.focus();
     })
     .finally(() => {
       submitButton.disabled = false;
