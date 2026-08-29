@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Software developer portfolio featuring selected projects and technical skills.">
+  <title>Jean Kathleen Villegas — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand serif" href="#top">JEAN KATHLEEN VILLEGAS</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li><li><a href="#work">Work</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="hero-marquee-track">
+          <span>DESIGN • DEVELOP • DELIVER •</span>
+          <span>DESIGN • DEVELOP • DELIVER •</span>
+        </div>
+      </div>
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">Software developer</p>
+          <h1 class="serif">Building digital experiences with purpose.</h1>
+          <p class="hero-copy">I create reliable, thoughtful digital products—from polished interfaces to the systems that power them.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#work">View my work ↓</a>
+            <a class="button button-outline" href="assets/Jean-Kathleen-Villegas-Resume.pdf" download="Jean-Kathleen-Villegas-Resume.pdf">Download résumé ↓</a>
+          </div>
+          <div class="hero-specialties" aria-label="Development specialties">
+            <span>Front end</span><span>Back end</span>
+          </div>
+        </div>
+        <div class="portrait-wrap" id="portrait-card" tabindex="0" aria-label="Portrait of Jean Kathleen Villegas">
+          <img class="portrait" src="picture.png" alt="Jean Kathleen Villegas" width="500" height="612">
+          <div class="portrait-overlay">
+            <p class="portrait-intro">Hi, I’m Jean Kathleen.</p>
+            <p class="role-line">I’m a <span id="changing-role">Developer</span><span class="type-cursor" aria-hidden="true"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about section" id="about">
+      <div class="container two-column">
+        <header><p class="eyebrow">About me</p><h2 class="section-title serif">Thoughtful code. Useful products.</h2></header>
+        <div>
+          <p class="about-copy">I’m a software developer focused on turning complex problems into clear, maintainable experiences. I care about clean architecture, accessible interfaces, and shipping work that creates real value.</p>
+          <div class="skills">
+            <article class="skill"><h3>Front end</h3><p>Responsive, accessible interfaces built for real people.</p></article>
+            <article class="skill"><h3>Back end</h3><p>Reliable APIs, data models, and integrations that scale.</p></article>
+            <article class="skill"><h3>Delivery</h3><p>Testing, collaboration, and steady iteration from idea to launch.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work section" id="work">
+      <div class="container">
+        <header class="work-heading"><div><p class="eyebrow">Selected work</p><h2 class="section-title serif">Built for real workflows.</h2></div><p class="work-intro">Explore each product through its key screens. Select a preview or open the gallery for a closer look.</p></header>
+        <div class="project-showcases">
+          <article class="project-showcase" data-project="tle"><div class="project-copy"><div class="project-number">01 <span>Web application</span></div><h3 class="serif">TLE Laboratory Reservation</h3><p class="project-lead">A focused reservation system for scheduling TLE laboratories, tools, and equipment without the paperwork.</p><ul class="feature-list"><li>Laboratory and equipment booking</li><li>Schedule and request management</li><li>Printable reservation forms</li></ul><div class="project-meta"><span>Reservation</span><span>Administration</span><span>Responsive UI</span></div><button class="gallery-button" type="button" data-open-gallery="tle">View all 7 screens <span aria-hidden="true">↗</span></button></div><div class="project-demo theme-green"><div class="browser-frame tilt-card" tabindex="0"><div class="browser-bar"><i></i><i></i><i></i><span>tle-reservation.app</span></div><img class="project-main-image" src="projects/1/1.png" alt="TLE Laboratory Reservation sign-in screen"><span class="screen-count">01 / 07</span></div><div class="screen-strip" aria-label="TLE project screenshots"><button class="screen-thumb active" data-src="projects/1/1.png" data-alt="TLE Reservation sign-in screen"><img src="projects/1/1.png" alt=""></button><button class="screen-thumb" data-src="projects/1/2.png" data-alt="TLE Reservation dashboard"><img src="projects/1/2.png" alt=""></button><button class="screen-thumb" data-src="projects/1/3.png" data-alt="TLE Reservation booking screen"><img src="projects/1/3.png" alt=""></button><button class="screen-thumb" data-src="projects/1/4.png" data-alt="Printable TLE reservation form"><img src="projects/1/4.png" alt=""></button></div></div></article>
+          <article class="project-showcase project-reverse" data-project="foodjs"><div class="project-copy"><div class="project-number">02 <span>E-commerce experience</span></div><h3 class="serif">FoodJS Ordering System</h3><p class="project-lead">A polished food ordering experience that takes customers from discovery to checkout with a simple, appetizing interface.</p><ul class="feature-list"><li>Browse and discover menu items</li><li>Cart and quantity management</li><li>Streamlined ordering and checkout</li></ul><div class="project-meta"><span>Food ordering</span><span>Cart flow</span><span>Customer UI</span></div><button class="gallery-button" type="button" data-open-gallery="foodjs">View all 13 screens <span aria-hidden="true">↗</span></button></div><div class="project-demo theme-orange"><div class="browser-frame tilt-card" tabindex="0"><div class="browser-bar"><i></i><i></i><i></i><span>foodjs.app</span></div><img class="project-main-image" src="projects/2/8.png" alt="FoodJS home page"><span class="screen-count">01 / 13</span></div><div class="screen-strip" aria-label="FoodJS project screenshots"><button class="screen-thumb active" data-src="projects/2/8.png" data-alt="FoodJS home page"><img src="projects/2/8.png" alt=""></button><button class="screen-thumb" data-src="projects/2/10.png" data-alt="FoodJS menu"><img src="projects/2/10.png" alt=""></button><button class="screen-thumb" data-src="projects/2/14.png" data-alt="FoodJS shopping cart"><img src="projects/2/14.png" alt=""></button><button class="screen-thumb" data-src="projects/2/18.png" data-alt="FoodJS order screen"><img src="projects/2/18.png" alt=""></button></div></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="contact section" id="contact">
+      <div class="container two-column">
+        <header><p class="eyebrow">Get in touch</p><h2 class="section-title serif">Let’s build something useful.</h2><p class="contact-copy">Have a role, project, or idea in mind? Send a note and I’ll get back to you.</p></header>
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/9d96109c6447c65741d0e515f635f584" method="POST">
+          <input type="hidden" name="_subject" value="New portfolio contact message">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" hidden>
+          <div class="form-row"><div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div></div>
+          <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" required></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+          <button class="button" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <dialog class="gallery-modal" id="project-gallery" aria-labelledby="gallery-title"><div class="gallery-top"><div><p class="eyebrow">Project gallery</p><h2 class="serif" id="gallery-title">Project screens</h2></div><button class="gallery-close" type="button" aria-label="Close gallery">×</button></div><div class="gallery-stage"><button class="gallery-arrow gallery-prev" type="button" aria-label="Previous screenshot">←</button><img id="gallery-image" src="" alt=""><button class="gallery-arrow gallery-next" type="button" aria-label="Next screenshot">→</button></div><div class="gallery-footer"><p id="gallery-caption"></p><span id="gallery-position"></span></div></dialog>
+  <footer class="site-footer"><div class="container footer-row"><strong class="serif">Jean Kathleen Villegas</strong><span>© <span id="year"></span> · Built with care.</span></div></footer>
+</body>
+</html>
