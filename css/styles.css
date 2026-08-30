@@ -131,14 +131,14 @@
 /* Prevent portrait and overlay content from being over-cropped */
 .hero-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2.5rem,5vw,5rem)}
 .portrait-wrap{width:100%;max-width:590px;height:min(80vh,760px)}
-.portrait{width:132%;bottom:-1%}
+.portrait{width:118%;height:auto;bottom:0}
 .portrait-overlay{padding:10rem 2rem 2.4rem}
 .portrait-intro{font-size:clamp(1.3rem,2vw,1.65rem);font-weight:700;line-height:1.25}
 .role-line{font-size:clamp(1.8rem,3vw,2.7rem);white-space:nowrap}
 @media(max-width:1000px) and (min-width:801px){.role-line{font-size:clamp(1.75rem,3vw,2.4rem)}.portrait-overlay{padding-inline:1.5rem}}
 @media(max-width:1400px) and (min-width:801px){.hero{padding-block:2.25rem}.hero-layout{gap:clamp(2rem,4vw,3.5rem)}.hero-content h1{font-size:clamp(3.2rem,5vw,4rem)}.hero-copy{font-size:1.05rem}.portrait-wrap{width:min(100%,390px);height:min(80vh,620px);min-height:0}.portrait-overlay{padding:7rem 1.5rem 1.6rem}.portrait-intro{font-size:1.15rem}.role-line{font-size:clamp(1.7rem,2.7vw,2.2rem)}.hero-specialties{margin-top:1.4rem}}
-@media(max-width:800px){.portrait-wrap{width:min(100%,540px);height:680px}.portrait{width:134%}.role-line{font-size:clamp(1.8rem,7vw,2.7rem)}}
-@media(max-width:480px){.portrait-wrap{height:570px}.portrait{width:138%}.portrait-overlay{padding:8rem 1.3rem 1.8rem}.role-line{font-size:clamp(1.75rem,8vw,2.5rem)}}
+@media(max-width:800px){.portrait-wrap{width:min(100%,540px);height:680px}.portrait{width:118%;height:auto}.role-line{font-size:clamp(1.8rem,7vw,2.7rem)}}
+@media(max-width:480px){.portrait-wrap{height:570px}.portrait{width:120%;height:auto}.portrait-overlay{padding:8rem 1.3rem 1.8rem}.role-line{font-size:clamp(1.75rem,8vw,2.5rem)}}
 
 /* Interactive project showcases */
 .project-showcases{display:grid;gap:clamp(5rem,10vw,9rem);margin-top:clamp(3.5rem,7vw,6rem)}
